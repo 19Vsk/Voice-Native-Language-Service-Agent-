@@ -1,4 +1,4 @@
-# Welfare Agent System
+# Voice Native Language Service Agent 
 
 A voice-first, agentic AI system for helping users identify and apply for government welfare schemes in native Indian languages.
 
@@ -115,7 +115,7 @@ python main.py demo te
 
 For detailed voice setup instructions, see **[VOICE_SETUP.md](VOICE_SETUP.md)**
 
-## 📖 Usage Examples
+##  Usage Examples
 
 ### Voice Conversation (English)
 ```
@@ -371,6 +371,5 @@ Contributions welcome! Areas of interest:
 - Integration with real government APIs
 - Performance optimization
 
-## License
 
-MIT License - See LICENSE file
+
