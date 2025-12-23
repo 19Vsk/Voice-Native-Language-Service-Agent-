@@ -2,17 +2,17 @@
 
 A voice-first, agentic AI system for helping users identify and apply for government welfare schemes in native Indian languages.
 
-## 🎯 Features
+## Features
 
-✅ **Voice-First Interaction**: Complete voice input/output pipeline with natural speech  
-✅ **Human-like Conversation**: Speak to the agent and hear responses in natural voice  
-✅ **Native Language Support**: Telugu, Tamil, Marathi, Bengali, Odia, English  
-✅ **True Agentic Workflow**: Planner-Executor-Evaluator state machine  
-✅ **Multiple Tools**: Scheme database, eligibility checker, application tracker  
-✅ **Conversation Memory**: Context awareness with contradiction detection  
-✅ **Failure Handling**: Graceful error recovery and clarification
+ **Voice-First Interaction**: Complete voice input/output pipeline with natural speech  
+ **Human-like Conversation**: Speak to the agent and hear responses in natural voice  
+ **Native Language Support**: Telugu, Tamil, Marathi, Bengali, Odia, English  
+ **True Agentic Workflow**: Planner-Executor-Evaluator state machine  
+ **Multiple Tools**: Scheme database, eligibility checker, application tracker  
+ **Conversation Memory**: Context awareness with contradiction detection  
+ **Failure Handling**: Graceful error recovery and clarification
 
-## 🎤 Voice Capabilities
+##  Voice Capabilities
 
 The agent can:
 - **Listen** to your voice in your native language
@@ -38,7 +38,7 @@ The agent can:
          │
          ▼
 ┌──────────────────────────────────────────┐
-│         Agent State Machine               │
+│         Agent State Machine              │
 ├──────────────────────────────────────────┤
 │  1. PLANNING: Analyze request & plan     │
 │  2. EXECUTING: Call tools                │
@@ -48,28 +48,28 @@ The agent can:
          │
          ▼
 ┌──────────────────────────────────────┐
-│        Tool Ecosystem                 │
+│        Tool Ecosystem                │
 ├──────────────────────────────────────┤
-│ • Scheme Database                     │
-│ • Eligibility Checker                 │
-│ • Application Tracker                 │
-│ • User Profile Builder                │
+│ • Scheme Database                    │
+│ • Eligibility Checker                │
+│ • Application Tracker                │
+│ • User Profile Builder               │
 └────────┬─────────────────────────────┘
          │
          ▼
 ┌─────────────────────────────────┐
-│  Conversation Memory Manager     │
-│  (Tracks context & history)      │
+│  Conversation Memory Manager    │
+│  (Tracks context & history)     │
 └────────┬────────────────────────┘
          │
          ▼
 ┌──────────────────────────────┐
 │  Voice Output (TTS)          │
-│  (Agent speaks response)      │
+│  (Agent speaks response)     │
 └──────────────────────────────┘
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Step 1: Install Voice Dependencies
 ```bash
@@ -88,7 +88,7 @@ python test_voice.py
 
 ### Step 3: Run the Agent
 
-#### Voice Mode (Speak and Listen) 🎤
+#### Voice Mode (Speak and Listen) 
 ```bash
 # English
 python main.py voice en local
@@ -103,12 +103,12 @@ python main.py voice ta local
 python main.py voice mr local
 ```
 
-#### Text Mode (Type) ⌨️
+#### Text Mode (Type) 
 ```bash
 python main.py interactive en
 ```
 
-#### Demo Mode 🎬
+#### Demo Mode 
 ```bash
 python main.py demo te
 ```
@@ -119,22 +119,22 @@ For detailed voice setup instructions, see **[VOICE_SETUP.md](VOICE_SETUP.md)**
 
 ### Voice Conversation (English)
 ```
-🔊 Agent: Hello! I am your welfare assistant. How can I help you today?
+ Agent: Hello! I am your welfare assistant. How can I help you today?
 
-🎤 Listening... (speak now)
-✅ You said: I want to apply for a pension scheme
+ Listening... (speak now)
+ You said: I want to apply for a pension scheme
 
-🔊 Agent: I'd be happy to help you with a pension scheme. Could you tell me your age?
+ Agent: I'd be happy to help you with a pension scheme. Could you tell me your age?
 
-🎤 Listening... (speak now)
-✅ You said: I am 65 years old
+ Listening... (speak now)
+ You said: I am 65 years old
 
-🔊 Agent: Great! And what is your annual income?
+ Agent: Great! And what is your annual income?
 
-🎤 Listening... (speak now)
-✅ You said: Around 25000 rupees per year
+ Listening... (speak now)
+ You said: Around 25000 rupees per year
 
-🔊 Agent: Based on your age and income, you're eligible for the National Old Age Pension Scheme...
+ Agent: Based on your age and income, you're eligible for the National Old Age Pension Scheme...
 ```
 
 ### Example 1: Pension Inquiry (Telugu)
@@ -231,13 +231,13 @@ IDLE → LISTENING → PROCESSING → PLANNING
 
 ## Supported Indian Languages
 
-| Language | Code | Status |
-|----------|------|--------|
-| Telugu | `te` | ✅ Full Support |
-| Tamil | `ta` | ✅ Full Support |
-| Marathi | `mr` | ✅ Full Support |
-| Bengali | `bn` | ✅ Full Support |
-| Odia | `or` | ✅ Full Support |
+| Language | Code|     Status   |
+|----------|-----|--------------|
+| Telugu | `te`  |  Full Support|
+| Tamil | `ta`   |  Full Support|
+| Marathi | `mr` |  Full Support|
+| Bengali | `bn` |  Full Support|
+| Odia | `or`    |  Full Support|
 
 ## Configuration
 
@@ -285,12 +285,12 @@ python main.py evaluate
 ```
 
 ### Test Scenarios Included
-1. ✅ Basic eligibility queries
-2. ✅ Incomplete information handling
-3. ✅ Document upload tracking
-4. ✅ Contradiction detection & resolution
-5. ✅ Multi-turn conversations
-6. ✅ Language-specific responses
+1.  Basic eligibility queries
+2.  Incomplete information handling
+3.  Document upload tracking
+4.  Contradiction detection & resolution
+5.  Multi-turn conversations
+6.  Language-specific responses
 
 ### Example Evaluation Output
 ```
@@ -332,12 +332,12 @@ welfare-agent/
 ## Error Handling
 
 The system handles:
-- ❌ **STT Errors**: No audio input → Asks user to repeat
-- ❌ **Language Mismatch**: Wrong language detected → Confirms with user
-- ❌ **Incomplete Profile**: Missing required fields → Asks clarifying questions
-- ❌ **Tool Failures**: Tool execution error → Falls back gracefully
-- ❌ **Contradictions**: Conflicting information → Asks for clarification
-- ❌ **API Errors**: API unavailable → Uses fallback responses
+-  **STT Errors**: No audio input → Asks user to repeat
+-  **Language Mismatch**: Wrong language detected → Confirms with user
+-  **Incomplete Profile**: Missing required fields → Asks clarifying questions
+-  **Tool Failures**: Tool execution error → Falls back gracefully
+-  **Contradictions**: Conflicting information → Asks for clarification
+-  **API Errors**: API unavailable → Uses fallback responses
 
 ## Performance
 
@@ -374,20 +374,3 @@ Contributions welcome! Areas of interest:
 ## License
 
 MIT License - See LICENSE file
-
-## Support
-
-For issues or questions:
-- 📧 Email: support@welfareagent.ai
-- 🐛 GitHub Issues: [Project Issues](https://github.com/welfareagent/issues)
-- 💬 Community: [Discord](https://discord.gg/welfareagent)
-
-## Acknowledgments
-
-- Government of India welfare schemes documentation
-- Indian language NLP community
-- Open source voice and LLM projects
-
----
-
-**Built with ❤️ for Indian citizens**
